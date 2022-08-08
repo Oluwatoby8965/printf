@@ -39,12 +39,12 @@ int print_sign(va_list arg, int base)
 	return (cont);
 }
 /**
- * print_unsign - print_unsign
- * @arg: va_list parameter
- * @base: base 10, 8, 16 etc..
- * Description: print numbers without signed
- * Return: num of characters
- */
+* print_unsign - print_unsign
+* @arg: va_list parameter
+* @base: base 10, 8, 16 etc..
+* Description: print numbers without signed
+* Return: num of characters
+*/
 int print_unsign(va_list arg, int base)
 {
 	int cont = 0;
@@ -60,11 +60,11 @@ int print_unsign(va_list arg, int base)
 
 }
 /**
- * print_string - print string
- * @arg: va_list parameter
- * Description: print string
- * Return: num of characters
- */
+* print_string - print string
+* @arg: va_list parameter
+* Description: print string
+* Return: num of characters
+*/
 int print_string(va_list arg)
 {
 	char *s;
@@ -83,13 +83,13 @@ int print_string(va_list arg)
 	return (cont);
 }
 /**
- * print_base16_upper_lower - print_base16_upper_lower
- * @arg: va_list parameter
- *@representation: pointer parameter
- * Description: This function takes 0123456789ABCDEF or 0123456789abcdef
- * in representation parameter for print hexadecimal format
- * Return: num of characters
- */
+* print_base16_upper_lower - print_base16_upper_lower
+* @arg: va_list parameter
+*@representation: pointer parameter
+* Description: This function takes 0123456789ABCDEF or 0123456789abcdef
+* in representation parameter for print hexadecimal format
+* Return: num of characters
+*/
 int print_base16_upper_lower(va_list arg, char *representation)
 {
 	unsigned int i = 0, cont = 0;
