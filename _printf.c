@@ -73,12 +73,12 @@ int loop_format(va_list arg, const char *string)
 	return (cont);
 }
 /**
- * check_percent - call function manager
- *@flag: value by reference
- *@aux: character
- *Description: This function print % pear
- *Return: 1 if % is printed
- */
+* check_percent - call function manager
+*@flag: value by reference
+*@aux: character
+*Description: This function print % pear
+*Return: 1 if % is printed
+*/
 int check_percent(int *flag, char aux)
 {
 	int tmp_flag;
@@ -95,12 +95,12 @@ int check_percent(int *flag, char aux)
 }
 
 /**
- * call_function_manager - call function manager
- *@aux: character parameter
- *@arg: va_list arg
- *Description: This function call function manager
- *Return: num of characteres printed
- */
+* call_function_manager - call function manager
+*@aux: character parameter
+*@arg: va_list arg
+*Description: This function call function manager
+*Return: num of characteres printed
+*/
 
 int call_function_manager(char aux, va_list arg)
 {
