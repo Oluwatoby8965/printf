@@ -2,12 +2,12 @@
 #include <stdarg.h>
 
 /**
- * print_ptr - print_base16_upper_lower
- * @arg: va_list parameter
- * Description: This function print address pointer
- * in representation parameter for print hexadecimal format
- * Return: address pointer
- */
+* print_ptr - print_base16_upper_lower
+* @arg: va_list parameter
+* Description: This function print address pointer
+* in representation parameter for print hexadecimal format
+* Return: address pointer
+*/
 
 int print_ptr(va_list arg)
 {
@@ -53,10 +53,10 @@ int print_ptr(va_list arg)
 }
 
 /**
- * print_rot13 - prints a string using rot13
- * @arg: list of arguments from _printf
- * Return: length of the printed string
- */
+* print_rot13 - prints a string using rot13
+* @arg: list of arguments from _printf
+* Return: length of the printed string
+*/
 int print_rot13(va_list arg)
 {
 	register short i, j;
@@ -81,4 +81,33 @@ int print_rot13(va_list arg)
 		}
 	}
 	return (j);
+}
+/**
+* print_rev - prints a string in reverse
+* @arg: argument from _printf
+* if a flag is passed to _printf
+* Return: length of the printed string
+*/
+int print_rev(va_list arg)
+{
+	int i = 0;
+	int j;
+	char *s = va_arg(arg, char *);
+
+	if (!s)
+	{
+		return (-1);
+	}
+
+	while (s[i])
+	{
+		i++;
+	}
+
+	for (j = i - 1; j >= 0; j--)
+	{
+		_putchar(s[j]);
+	}
+
+	return (i);
 }
