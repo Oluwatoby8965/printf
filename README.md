@@ -1,2 +1,1 @@
-# printf
-printf project with a pair
+## This is a printf project by Tobi Amoniyan and Mostafa Neamatalla
