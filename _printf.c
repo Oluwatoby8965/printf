@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- *_printf - printf
- *@format: const char pointer
- *Description: this functions implement some functions of printf
- *Return: num of characteres printed
- */
+*_printf - printf
+*@format: const char pointer
+*Description: this functions implement some functions of printf
+*Return: num of characteres printed
+*/
 int _printf(const char *format, ...)
 {
 	const char *string;
